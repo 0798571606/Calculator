@@ -37,12 +37,12 @@ export default function Calculator() {
         }
       });
 
-    // if (isNaN(result)) {
-    //   setExpression([...expression, 'Cannot']);
-    // } else {
+    if (isNaN(result)) {
+      setExpression([...expression, 'Cannot']);
+    } else {
     setExpression([result]);
     setIsResult(true);
-    // }
+    }
   }
 
   return (
