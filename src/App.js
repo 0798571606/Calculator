@@ -30,7 +30,7 @@ export default function Calculator() {
             return (acc -= array[index + 1]);
           case '*':
             return (acc *= array[index + 1]);
-          case '/':
+          case '÷':
             return (acc /= array[index + 1]);
           default:
             return acc;
@@ -40,8 +40,8 @@ export default function Calculator() {
     if (isNaN(result)) {
       setExpression([...expression, 'Cannot']);
     } else {
-    setExpression([result]);
-    setIsResult(true);
+      setExpression([result]);
+      setIsResult(true);
     }
   }
 
@@ -61,8 +61,8 @@ export default function Calculator() {
         <button onClick={() => handleClick('%')} id='normal-btn'>
           %
         </button>
-        <button onClick={() => handleClick('/')} id='normal-btn'>
-          /
+        <button onClick={() => handleClick('÷')} id='normal-btn'>
+          ÷
         </button>
         <button onClick={() => handleClick('*')} id='normal-btn'>
           *
